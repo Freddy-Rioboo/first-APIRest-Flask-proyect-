@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def main():
-    return "welcome"
+    return "welcome to the main page"
 
 #Showing all products available on the database.
 @app.route('/products')
