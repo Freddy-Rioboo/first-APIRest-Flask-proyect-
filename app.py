@@ -1,12 +1,12 @@
-from flask import Flask, jsonify, request, json 
+from flask import Flask, jsonify, request, json, render_template
 from products import guitars
 
 
 app = Flask(__name__)
 
 @app.route('/')
-def main():
-    return "welcome to the main page"
+def index():
+    return render_template('index.html')
 
 #Showing all products available on the database.
 @app.route('/products')
