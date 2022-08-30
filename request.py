@@ -36,6 +36,22 @@ new_product={
 url4 = 'http://127.0.0.1:5000/products/insert-new'
 response4 = requests.post(url4, json=new_product)
 print(response4.content.decode())
-
 print('_____________________________________')
 
+
+# Testing to apdate a product.
+updates = {
+    "model": "junior-super-strat",
+    "brand": "PRS",
+    "color": "Pink",
+}
+url5 = 'http://127.0.0.1:5000/products/update/5'
+response5 = requests.put(url5, json=updates)
+print(response5.content.decode())
+print('________________________________')
+
+
+#Testing to delete a product
+url6 ='http://127.0.0.1:5000/products/delete/1'
+response6 = requests.delete(url6)
+print(response6.content.decode())  
