@@ -6,8 +6,8 @@ try:
         host ='localhost',
         port = 3306,
         user = 'root',
-        password = '20473781',
-        db = 'guitars'
+        password = 'your password',
+        db = 'db_name'
     )
     
     if conexion.is_connected():
